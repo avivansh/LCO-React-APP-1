@@ -1,0 +1,59 @@
+.StateCounter {
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 20vh;
+    color: aliceblue;
+    background: gray;
+
+
+    button {
+      color: #ffffff;
+      padding: 5px 25px;
+      margin: 10px;
+      font-size: 20px;
+      text-transform: uppercase;
+      width: 300px;
+      border-radius: 15px;
+      background-color: #007bff;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+  }
+  
+
+
+  body {
+    background-color: #000000;
+  }
+
+  .app__tic-tac-toe {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 15px;
+    }
+    
+    .box {
+      width: auto;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .icon {
+      font-size: 35px;
+      color: #ffffff;
+    }
+  }
+  
+
+  
+  
