@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import AppSection from "./AppSection";
 import CardSection from "./CardSection";
 import HeroSection from "./HeroSection";
-import Icons from "./components/Icons";
+import Icon from "./components/Icon";
 
 import { Button, Card, CardBody, Container, Col, Row } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.css";
@@ -58,7 +58,22 @@ const App = () => {
       <hr />
       <h1> Section 3 </h1>
       <div className="app__tic-tac-toe">
-        <Icons />
+        <Container className="p-5">
+          <ToastContainer position="bottom-center" />
+          <Row>
+            <Col md={6} className="offset-md-3">
+              <div className="grid">
+                {itemArray.map((item, index) => (
+                  <Card>
+                    <CardBody className="box">
+                      <Icon />
+                    </CardBody>
+                  </Card>
+                ))}
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </div>
   );
